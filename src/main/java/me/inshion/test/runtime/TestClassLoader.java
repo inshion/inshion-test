@@ -39,6 +39,10 @@ public class TestClassLoader {
 				return (recursive && file.isDirectory()) || (file.getName().endsWith(".class"));
 			}
 		});
+
+		if (dirfiles == null) {
+			return;
+		}
 		// 循环所有文件  
 		for (File file : dirfiles) {
 			// 如果是目录 则继续扫描  
