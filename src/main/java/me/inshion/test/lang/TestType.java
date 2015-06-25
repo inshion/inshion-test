@@ -54,6 +54,6 @@ public class TestType {
             
         };*/
 
-        System.out.println(g.build(null));
+        System.out.println((Object)g.build(null));
     }
 }
